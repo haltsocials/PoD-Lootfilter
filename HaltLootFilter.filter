@@ -34,9 +34,9 @@ Option[DefaultNotifyLevel]: HIGH
 Option[IgnoreMissingSounds]: True
 //────────────────────────────────────────────────────────────────────────────────────────────
 //Base：（1）   Suitable for early ladder or regular use, only hide useless trash
-//Maps：（2~3）Used for red maps,hide some cheap WR base,hide rune(1/2/3/5),hide low level magic rings/amulets/BAR heads/AMA javelins,hide rare gloves/boots/belts/BAR & DRU heads
+//Maps：（2~3）Used for red maps,hide some cheap WR base,hide rune(1/2/3/5),hide low level magic rings/amulets/BAR heads/AMA javelins,hide rare gloves/boots/belts/BAR & DRU heads, removes notifications for charms and jewels
 //End Game：（4~5）Used for end games,hide more WR base,hide more runes(4/6/7/9/10/13),hide flawless gems(topaz/sapphire/emerald/diamond),hide more rare items left only Circlets/rings/amulets/arrows/ASN claws/AMA javs,hide low value set items
-//Strict：（6~7）Caution！hide the vast majority of RW base，hide more runes(8/11/12),hide all rares,hide all flawless gems(except skull),jewels,hide more set items,reduce the notification number of unique items
+//Strict：（6~7）Caution！hide the vast majority of RW base，hide more runes(8/11/12),hide all rares,hide all flawless gems(except skull),jewels,hide more set items,reduce the notification number of unique items, hides all but grand charms
 //────────────────────────────────────────────────────────────────────────────────────────────
 ItemStyle[LOW]: MapIcon = 26, NotificationColor = WHITE, NotificationSound = 418
 ItemStyle[MID]: MapIcon = 26, NotificationColor = WHITE, NotificationSound = 35
@@ -1543,10 +1543,9 @@ ItemDisplay[SPECIAL OR SYNTH]: %NL%%GOLD%✠%YELLOW%✠ %GOLD%Synth %ITEMNAME% %
 //──── ETH High price  ────
 ItemDisplay[(ama OR 7pa OR uvb OR 7s8) UNI ETH !ID]: %NL%%GOLD%✠%GRAY%✠ %RED%[E] %GOLD%%NAME%  %GRAY%✠%GOLD%✠%NL%%SPACE%<<HIGH>>
 //──── High price ────
-ItemDisplay[(rin OR amu OR xh9 OR uap OR ulm OR usk OR urn OR ci3 OR upl OR uar OR uit OR xtb OR ulc OR 6lw OR 7gw OR pa9) UNI !ID]: %NL%%GOLD%✠✠%GOLD%  %NAME%  %GOLD%✠✠%NL%%SPACE%<<HIGH>>
+ItemDisplay[(rin OR amu OR ulc OR ci3 OR uar) UNI !ID]: %NL%%GOLD%✠✠%GOLD%  %NAME%  %GOLD%✠✠%NL%%SPACE%<<HIGH>>
 //──── Not bad ────
-ItemDisplay[(xhn OR xlt OR upl OR xea OR xtp OR uvg OR ci2 OR baa OR dra OR xhb OR uvb OR uhb OR xmb OR nea OR 6cs OR obc OR ama) UNI !ID FILTERLVL<6]: %NL%%GOLD%✠  %GOLD%%NAME%  %GOLD%✠%NL%%SPACE%<<MID>>
-ItemDisplay[(xhn OR xea OR baa OR uvb OR nea OR 6cs OR ama) UNI !ID]: %NL%%GOLD%✠  %GOLD%%NAME%  %GOLD%✠%NL%%SPACE%<<MID>>
+ItemDisplay[(ama OR 6lw OR oba OR obc OR 6cs OR 7wa OR 7gi OR 7gd OR 7cr OR 7gw OR obf OR baa OR dra OR dre OR xea OR xhn OR xpl OR upl OR utu OR zhb OR zvb OR xmb OR xtb OR uvg OR uhg OR uap OR ulm OR uhm OR usk OR xh9 OR pa9 OR uit OR nea OR nef OR pac) UNI !ID]: %NL%%GOLD%✠  %GOLD%%NAME%  %GOLD%✠%NL%%SPACE%<<MID>>
 ItemDisplay[UNI !ID FILTERLVL<6]: %NAME%  
 ItemDisplay[UNI ID]: %NAME%%NL%%GOLD%%ITEMNAME% 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
