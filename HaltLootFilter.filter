@@ -1114,30 +1114,30 @@ EnableIf[PLRCLASS(NEC) FILTERLVL=1]
 	ItemDisplay[CLVL<45 STORAGE(SHOP) CHARGES("Teleport")]: %NOTIFY(ITEM)%Teleport Staff 
 	ItemDisplay[CLVL<35 CL4 SKILL("Bone Spear")=1 !RW ]: %GRAY%[Bone Spear +1 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<55 CL4 SKILL("Bone Spear")=2 !RW ]: %GRAY%[Bone Spear +2 Totem]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<85 CL4 SKILL("Bone Spear")=3 !RW ]: %GRAY%[Bone Spear +3 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<85 CL4 SKILL("Bone Spear")=3 !RW ]: %GOLD%[Bone Spear +3 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 WP12 SKILL("Bone Spear")=1 !RW ]: %GRAY%[Bone Spear +1]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<35 WP12 SKILL("Bone Spear")=2 !RW ]: %GRAY%[Bone Spear +2]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<60 WP12 SKILL("Bone Spear")=3 !RW ]: %GRAY%[Bone Spear +3]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<60 WP12 SKILL("Bone Spear")=3 !RW ]: %GOLD%[Bone Spear +3]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<75 WP13 !ETH NMAG SOCK=4 ]: %GRAY%[Holy Thunder]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<30 EQ1 !ETH !CL2 !CL1 NMAG SOCK=2 ]: %GRAY%[Lore]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<20 EQ2 !ETH NMAG SOCK=2 ]: %GRAY%[Stealth]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<30 EQ3 !ETH !CL3 NMAG SOCK=3 ]: %GRAY%[Ancients Pledge]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=1 !RW ]: %GRAY%[Teeth +1]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=2 !RW ]: %GRAY%[Teeth +2]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=3 !RW ]: %GRAY%[Teeth +3]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=3 !RW ]: %GOLD%[Teeth +3]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=1 !RW ]: %GRAY%[Teeth +1 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=2 !RW ]: %GRAY%[Teeth +2 Totem]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=3 !RW ]: %GRAY%[Teeth +3 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=3 !RW ]: %GOLD%[Teeth +3 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<60 CL4 !ID MAG]: %BLUE%%NAME%%NOTIFY(WHITE)%
 	ItemDisplay[CLVL<70 CL4 !ID RARE]: %YELLOW%%NAME%%NOTIFY(WHITE)%
 	ItemDisplay[CLVL<25 WP12 SKILL("Hemorrhage")=1 !RW ]: %GRAY%[Hemorrhage +1]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<35 WP12 SKILL("Hemorrhage")=2 !RW ]: %GRAY%[Hemorrhage +2]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<60 WP12 SKILL("Hemorrhage")=3 !RW ]: %GRAY%[Hemorrhage +3]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<60 WP12 SKILL("Hemorrhage")=3 !RW ]: %GOLD%[Hemorrhage +3]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<35 CL4 SKILL("Hemorrhage")=1 !RW ]: %GRAY%[Hemorrhage +1 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<55 CL4 SKILL("Hemorrhage")=2 !RW ]: %GRAY%[Hemorrhage +2 Totem]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<85 CL4 SKILL("Hemorrhage")=3 !RW ]: %GRAY%[Hemorrhage +3 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<85 CL4 SKILL("Hemorrhage")=3 !RW ]: %GOLD%[Hemorrhage +3 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<75 WP12 NMAG !RW !SOCK=1 !wnd !ywn !9wn SKILL("Bone Spear")=3 ]: %GRAY%[Bone Spear White]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<75 WP12 NMAG !RW SOCK=2 !wnd !ywn !9wn SKILL("Bone Spear")=3 ]: %GRAY%[Bone Spear White 2os]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<75 WP12 NMAG !RW SOCK=2 !wnd !ywn !9wn SKILL("Bone Spear")=3 ]: %GOLD%[Bone Spear White 2os]%NOTIFY(ITEM)%
 EndIf[]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //──── Superior ────
