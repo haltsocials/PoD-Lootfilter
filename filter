@@ -69,9 +69,9 @@ ItemDisplay[(WEAPON OR ARMOR) RW]: %BASENAME%%CONTINUE%
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                  ▬▬▬▬▬ Item Tier、Item level、Armor&Shield weight▬▬▬▬▬                        ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
-ItemDisplay[(WEAPON OR ARMOR) FILTERLVL<3 NORM]: %NAME% [Norm]%CONTINUE%
-ItemDisplay[(WEAPON OR ARMOR) FILTERLVL<3 EXC]: %NAME% [Exc]%CONTINUE%
-ItemDisplay[(WEAPON OR ARMOR) FILTERLVL<3 ELT]: %NAME% [Elt]%CONTINUE%
+//ItemDisplay[(WEAPON OR ARMOR) FILTERLVL<3 NORM]: %NAME% [Norm]%CONTINUE%
+//ItemDisplay[(WEAPON OR ARMOR) FILTERLVL<3 EXC]: %NAME% [Exc]%CONTINUE%
+//ItemDisplay[(WEAPON OR ARMOR) FILTERLVL<3 ELT]: %NAME% [Elt]%CONTINUE%
 //ItemDisplay[(qui OR lea OR hla OR stu OR brs OR xui OR ltp OR xea OR xla OR xtu OR xrs OR xtp OR uui OR uea OR ula OR utu OR urs OR utp OR buc OR sml OR kit OR bsh OR spk OR xuc OR xml OR xit OR xsh OR xpk OR uuc OR uml OR uit OR ush OR upk) OR CL3 OR CL4 ]: %NAME%[L]%CONTINUE%
 //ItemDisplay[(rng OR chn OR spl OR fld OR gth OR aar OR xng OR xhn OR xpl OR xld OR xth OR xar OR ung OR uhn OR upl OR uld OR uth OR uar OR lrg OR gts OR xrg OR xts OR urg OR uts)]: %NAME%[M]%CONTINUE%
 //ItemDisplay[(scl OR plt OR ful OR xcl OR xlt OR xul OR ucl OR ult OR uul OR tow OR xow OR uow)]: %NAME%[H]%CONTINUE%
@@ -719,47 +719,47 @@ ItemDisplay[ear]: %GOLD%%NAME%
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                                      ▬▬▬▬▬ (Relic) ▬▬▬▬▬                                      ║ 
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
-ItemDisplay[ma10 !ID]:%NAME%%NL%%GRAY%T0-Lv86{%WHITE%(Icy Cavern)} <<MAP>>
-ItemDisplay[ma2 !ID]:%NAME%%NL%%GRAY%T0-Lv86{%WHITE%(Forgotten Desert)} <<MAP>>
-ItemDisplay[ma3 !ID]:%NAME%%NL%%GRAY%T0-Lv86{%WHITE%(Abandoned Precinct)} <<MAP>> 
-ItemDisplay[ma4 !ID]:%NAME%%NL%%GRAY%T0-Lv86{%WHITE%(Desecrated Temple)} <<MAP>> 
-ItemDisplay[ma5 !ID]:%NAME%%NL%%GRAY%T0-Lv86{%WHITE%(Frigid Plateau)} <<MAP>>
-ItemDisplay[ma6 !ID]:%NAME%%NL%%GRAY%T0-Lv86{%WHITE%(Ruined Citadel)} <<MAP>>
-ItemDisplay[ma7 !ID]:%NAME%%NL%%GRAY%T0-Lv86{%WHITE%(Burnt Forest)} <<MAP>>
-ItemDisplay[ma8 !ID]:%NAME%%NL%%GRAY%T0-Lv86{%WHITE%(Musty Crypt)} <<MAP>> 
-ItemDisplay[ma9 !ID]:%NAME%%NL%%GRAY%T0-Lv86{%WHITE%(Dim Cellar)} <<MAP>>
+ItemDisplay[ma10 !ID]:%NAME%%NL%%GRAY%T2-Lv87{%WHITE%(Icy Cavern)} <<MAP>>
+ItemDisplay[ma2 !ID]:%NAME%%NL%%GRAY%T3-Lv88{%WHITE%(Forgotten Desert)} <<MAP>>
+ItemDisplay[ma3 !ID]:%NAME%%NL%%GRAY%T?-Lv??{%WHITE%(Abandoned Precinct)} <<MAP>> 
+ItemDisplay[ma4 !ID]:%NAME%%NL%%GRAY%T2-Lv87{%WHITE%(Desecrated Temple)} <<MAP>> 
+ItemDisplay[ma5 !ID]:%NAME%%NL%%GRAY%T3-Lv88{%WHITE%(Frigid Plateau)} <<MAP>>
+ItemDisplay[ma6 !ID]:%NAME%%NL%%GRAY%T3-Lv88{%WHITE%(Ruined Citadel)} <<MAP>>
+ItemDisplay[ma7 !ID]:%NAME%%NL%%GRAY%T3-Lv88{%WHITE%(Burnt Forest)} <<MAP>>
+ItemDisplay[ma8 !ID]:%NAME%%NL%%GRAY%T3-Lv88{%WHITE%(Musty Crypt)} <<MAP>> 
+ItemDisplay[ma9 !ID]:%NAME%%NL%%GRAY%T2-Lv87{%WHITE%(Dim Cellar)} <<MAP>>
 ItemDisplay[ma11 !ID]:%NAME%%NL%%GRAY%T0-Lv86{%WHITE%(Pleasant Pasture)} <<MAP>> 
 ItemDisplay[ma12 !ID]:%NAME%%NL%%GRAY%T1-Lv86{%WHITE%(Baleful Alcazar)} <<MAP>>
 ItemDisplay[ma13 !ID]:%NAME%%NL%%GRAY%T1-Lv86{%WHITE%(Decomposing Settlement)} <<MAP>>
 ItemDisplay[MAP !ID]:NEW RELIC%NL%%WHITE%** T?-Lv?? **<<MAP>>
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[ma10]: Icy Cavern%NL%%GRAY%T1-Lv86 <<MAP>> {%NL%Immunities:%RED%*F:120,%YELLOW%*L:100,%GOLD%*Phy:100,%DGREEN%*P:120%NL%%WHITE%High Res:%BLUE%C:50,%RED%F:33,%YELLOW%L:33,%ORANGE%M:50,%GOLD%Phy:50,%DGREEN%P:33%NL%%ORANGE%Monster Base Resistances and Immunities:} 
-ItemDisplay[ma2]: Forgotten Desert%NL%%GRAY%T3-Lv88 <<MAP>> {%NL%Immunities:%BLUE%*C:160,%RED%***F:130,%YELLOW%**L:100,%GOLD%*Phy:100,%DGREEN%***P:120%NL%%WHITE%High Res:%BLUE%C:50,%RED%F:66,%YELLOW%L:33,%ORANGE%M:50,%GOLD%Phy:50,%DGREEN%P:33%NL%%ORANGE%Monster Base Resistances and Immunities:} 
-ItemDisplay[ma3]: Abandoned Precinct%NL%%GRAY%T2-Lv87 <<MAP>> {%NL%Immunities:%BLUE%C:,%RED%F:,%YELLOW%L:,%ORANGE%M:,%GOLD%Phy:,%DGREEN%P:%NL%%WHITE%High Res:%BLUE%C:,%RED%F:,%YELLOW%L:,%ORANGE%M:,%GOLD%Phy:,%DGREEN%P:%NL%%ORANGE%Monster Base Resistances and Immunities:} 
-ItemDisplay[ma4]: Desecrated Temple%NL%%GREEN%T2-Lv87 <<MAP>> {%NL%Immunities:%BLUE%***C:190,%RED%***F:140,%YELLOW%*L:100,%DGREEN%*P:120%NL%%WHITE%High Res:%BLUE%C:50,%RED%F:66,%YELLOW%L:60,%ORANGE%M:50,%GOLD%Phy:75,%DGREEN%P:75%NL%%ORANGE%Monster Base Resistances and Immunities:} 
-ItemDisplay[ma5]: Frigid Plateau%NL%%GRAY%T2-Lv87 <<MAP>> {%NL%Immunities:%BLUE%*C:150,%RED%*F:140,%YELLOW%*****L:100,%DGREEN%**P:140%NL%%WHITE%High Res:%BLUE%C:66,%RED%F:66,%YELLOW%L:66,%ORANGE%M:50,%GOLD%Phy:75,%DGREEN%P:75%NL%%ORANGE%Monster Base Resistances and Immunities:} 
-ItemDisplay[ma6]: Ruined Citadel%NL%%GRAY%T2-Lv87 <<MAP>> {%NL%Immunities:%BLUE%****C:160,%YELLOW%***L:120,%GOLD%*Phy:100,%DGREEN%**P:120%NL%%WHITE%High Res:%BLUE%C:80,%RED%F:66,%YELLOW%L:50,%ORANGE%M:70,%GOLD%Phy:50,%DGREEN%P:75%NL%%ORANGE%Monster Base Resistances and Immunities:} 
-ItemDisplay[ma7]: Burnt Forest%NL%%GRAY%T2-Lv87 <<MAP>> {%NL%Immunities:%BLUE%***C:140,%RED%*F:145,%YELLOW%*****L:120,%ORANGE%**M:100,%DGREEN%**P:145%NL%%WHITE%High Res:%BLUE%C:66,%RED%F:66,%YELLOW%L:66,%ORANGE%M:20,%GOLD%Phy:80,%DGREEN%P:50%NL%%ORANGE%Monster Base Resistances and Immunities:} 
-ItemDisplay[ma8]: Musty Crypt%NL%%GRAY%T2-Lv87 <<MAP>> {%NL%Immunities:%BLUE%****C:190,%RED%***F:120,%YELLOW%****L:120,%GOLD%*Phy:100,%DGREEN%*P:120%NL%%WHITE%High Res:%BLUE%C:50,%RED%F:60,%YELLOW%L:33,%ORANGE%M:50,%GOLD%Phy:50,%DGREEN%P:33%NL%%ORANGE%Monster Base Resistances and Immunities:} 
-ItemDisplay[ma9]: Dim Cellar%NL%%GRAY%T2-Lv87 <<MAP>>  {%NL%Immunities:%BLUE%**C:150,%RED%**F:120,%YELLOW%*L:100,%DGREEN%*P:120%NL%%WHITE%High Res:%BLUE%C:50,%RED%F:50,%YELLOW%L:33,%ORANGE%M:0,%GOLD%Phy:75,%DGREEN%P:65%NL%%ORANGE%Monster Base Resistances and Immunities:} 
-ItemDisplay[ma11]: Pleasant Pasture%NL%%GRAY%T0-Lv86<<MAP>> {%NL%High Res:%BLUE%C:50,%RED%F:50,%YELLOW%L:50,%ORANGE%M:33,%GOLD%Phy:50,%DGREEN%P:33%NL%%ORANGE%Monster Base Resistances and Immunities:} 
-ItemDisplay[ma12]: Baleful Alcazar%NL%%GRAY%T2-Lv87 <<MAP>> {%NL%Immunities:%BLUE%*C:150,%RED%***F:140,%ORANGE%**M:100,%GOLD%*Phy:100,%DGREEN%**P:140%NL%%WHITE%High Res:%BLUE%C:66,%RED%F:66,%YELLOW%L:75,%ORANGE%M:25,%GOLD%Phy:50,%DGREEN%P:75%NL%%ORANGE%Monster Base Resistances and Immunities:} 
-ItemDisplay[ma13]: Decomposing Settlement%NL%%GRAY%T2-Lv87<<MAP>> {%NL%Immunities:%BLUE%**C:160,%RED%*F:120,%YELLOW%**L:100,%ORANGE%*M:100,%GOLD%*Phy:100,%DGREEN%**P:120%NL%%WHITE%High Res:%BLUE%C:80,%RED%F:60,%YELLOW%L:50,%ORANGE%M:70,%GOLD%Phy:75,%DGREEN%P:75%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma10]: Icy Cavern%NL%%GRAY%T2-Lv87 <<MAP>> {%NL%Immunities:%RED%*F:140,%GOLD%*P:100%NL%%WHITE%High Res:%BLUE%C:87,%RED%F:80,%YELLOW%L:80,%ORANGE%M:75,%GOLD%P:90,%DGREEN%P:80%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma2]: Forgotten Desert%NL%%GRAY%T3-Lv88 <<MAP>> {%NL%Immunities:%BLUE%*C:130,%YELLOW%**L:136,%ORANGE%*M:100,%GOLD%*P:101%NL%%WHITE%High Res:%BLUE%C:84,%RED%F:88,%YELLOW%L:92,%ORANGE%M:75,%GOLD%P:66,%DGREEN%P:90%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma3]: Abandoned Precinct%NL%%GRAY%T2-Lv87 <<MAP>> {%NL%Immunities:%BLUE%C:,%RED%F:,%YELLOW%L:,%ORANGE%M:,%GOLD%P:,%DGREEN%P:%NL%%WHITE%High Res:%BLUE%C:,%RED%F:,%YELLOW%L:,%ORANGE%M:,%GOLD%P:,%DGREEN%P:%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma4]: Desecrated Temple%NL%%GREEN%T2-Lv87 <<MAP>> {%NL%Immunities:%ORANGE%*M:100,%DGREEN%*P:110%NL%%WHITE%High Res:%BLUE%C:88,%RED%F:75,%YELLOW%L:85,%ORANGE%M:50,%GOLD%P:90,%DGREEN%P:110%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma5]: Frigid Plateau%NL%%GRAY%T3-Lv88 <<MAP>> {%NL%Immunities:%RED%**F:131,%GOLD%*L:100,%DGREEN%**P:134%NL%%WHITE%High Res:%BLUE%C:95,%RED%F:78,%YELLOW%L:75,%ORANGE%M:75,%GOLD%P:50,%DGREEN%P:85%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma6]: Ruined Citadel%NL%%GRAY%T3-Lv88 <<MAP>> {%NL%Immunities:%BLUE%**C:127,%RED%*R:118,%YELLOW%*L:118,%GOLD%*P:100%NL%%WHITE%High Res:%BLUE%C:90,%RED%F:56,%YELLOW%L:75,%ORANGE%M:85,%GOLD%P:90,%DGREEN%P:80%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma7]: Burnt Forest%NL%%GRAY%T3-Lv88 <<MAP>> {%NL%Immunities:%RED%*F:119,%YELLOW%*L:117,%ORANGE%*M:100,%GOLD%P:133,%DGREEN%**P:105%NL%%WHITE%High Res:%BLUE%C:85,%RED%F:95,%YELLOW%L:95,%ORANGE%M:75,%GOLD%P:90,%DGREEN%P:95%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma8]: Musty Crypt%NL%%GRAY%T3-Lv88 <<MAP>> {%NL%Immunities:%BLUE%**C:124,%RED%*F:121,%YELLOW%*L:125,%GOLD%*P:100,%DGREEN%*P:115%NL%%WHITE%High Res:%BLUE%C:90,%RED%F:91,%YELLOW%L:90,%ORANGE%M:75,%GOLD%P:78,%DGREEN%P:97%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma9]: Dim Cellar%NL%%GRAY%T2-Lv87 <<MAP>>  {%NL%Immunities:%BLUE%*C:101,%YELLOW%*L:109%NL%%WHITE%High Res:%BLUE%C:60,%RED%F:87,%YELLOW%L:68,%ORANGE%M:50,%GOLD%P:66,%DGREEN%P:68%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma11]: Pleasant Pasture%NL%%GRAY%T0-Lv86<<MAP>> {%NL%High Res:%BLUE%C:50,%RED%F:50,%YELLOW%L:50,%ORANGE%M:33,%GOLD%P:50,%DGREEN%P:33%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma12]: Baleful Alcazar%NL%%GRAY%T1-Lv86 <<MAP>> {%WHITE%High Res:%BLUE%C:66,%RED%F:75,%YELLOW%L:66,%ORANGE%M:80,%GOLD%P:50,%DGREEN%P:66%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma13]: Decomposing Settlement%NL%%GRAY%T1-Lv86<<MAP>> {%WHITE%High Res:%BLUE%B:55,%RED%R:60,%YELLOW%Y:66,%ORANGE%M:66,%GOLD%P:66,%DGREEN%P:66%NL%%ORANGE%Monster Base Resistances and Immunities:} 
 ItemDisplay[MAP ID]: new relics%NL%%WHITE%** T?-Lv?? ** <<MAP>> 
 ItemDisplay[maz]: %GOLD%⚝⚝⚝⚝⚝⚝%NL%%NAME%%NL%%GOLD%Diablo Clone{%GOLD%Good Luck!%NL%You only have one chance%NL%Unable to open the portal upon entry, unable to return after death}<<HIGH>>
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                                       ▬▬▬▬▬ Scroll ▬▬▬▬▬                                      ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
+ItemDisplay[tbk PLRCLASS(AMA)]: %NAME%{ %GOLD%FCR%WHITE%: 7, 14, 22, 32, 48, 68, 99, 152%NL%%GOLD%Faster Block%WHITE%: 13, 32, 86%NL%%GOLD%FHR%WHITE%: 6, 13, 20, 32, 52%WHITE%%NL%%ORANGE%(Titans or -10 Base)%GOLD%IAS%WHITE%: 10, 26, 50, 95%NL%%GOLD%Amazon%WHITE%%NL%}
+ItemDisplay[tbk PLRCLASS(DRU)]: %NAME%{ %GOLD%FHR%ORANGE%(Bear)%WHITE%: 5, 10, 16, 24, 37, 54, 86, 152, 360%NL%%GOLD%FHR%ORANGE%(Wolf)%WHITE%: 9, 20, 42, 86, 280%NL%%GOLD%Fast Block%ORANGE%(Human)%WHITE%: 0, 6, 13 20, 32, 52, 86, 174, 600%NL%%GOLD%Fast Block%ORANGE%(Bear)%WHITE%: 5, 10, 16, 27, 40, 65, 109, 223%NL%%GOLD%Fast Block%ORANGE%(Wolf)%WHITE%: 7, 15, 27, 48, 86, 200%NL%%GOLD%FCR%ORANGE%(Human)%WHITE%: 4, 10, 19, 30, 46, 68, 99, 163%NL%%GOLD%FCR %ORANGE%(Bear)%WHITE%: 7, 15, 26, 40, 63, 99, 163%NL%%GOLD%FCR%ORANGE%(Wolf)%WHITE%: 6, 14, 26, 40, 60, 95, 157%NL%%GOLD%Character%WHITE%%NL%}
+ItemDisplay[tbk PLRCLASS(ASS)]: %NAME%{ %GOLD%FCR%WHITE%: 8, 16, 27, 42, 65, 102, 174%NL%%GOLD%Faster Block%WHITE%: 13, 32, 86%NL%%GOLD%FHR%WHITE%: 7, 15, 27, 48, 86, 200%NL%%GOLD%Assasin%WHITE%%NL%}
+ItemDisplay[tbk PLRCLASS(BAR)]: %NAME%{ %GOLD%FCR%WHITE%: 9, 20, 37, 63, 105, 200%NL%%GOLD%Faster Block%WHITE%: 20, 42, 86, 280%NL%%GOLD%FHR%WHITE%: 7, 15, 27, 48, 86, 200%NL%%GOLD%Barbarian%WHITE%%NL%}
+ItemDisplay[tbk PLRCLASS(NEC)]: %NAME%{ %GOLD%FCR%WHITE%: 9, 18, 30, 48, 75, 125%NL%%GOLD%Faster Block%WHITE%: 6, 13, 20, 32, 52, 86, 174, 600%NL%%GOLD%FHR%WHITE%: 5, 10, 15, 26, 39, 56, 86, 152%NL%%GOLD%Necromancer%WHITE%}
+ItemDisplay[tbk PLRCLASS(PAL)]: %NAME%{ %GOLD%FCR%WHITE%: 9, 18, 30, 48, 75, 125%NL%%GOLD%Faster Block%ORANGE%(Holy Shield)%WHITE%: 0, 86%NL%%GOLD%Faster Block%WHITE%: 13, 32, 86%NL%%GOLD%FHR%ORANGE%(Spear/Staves)%WHITE%: 3, 7, 13, 20, 32, 48, 75, 129%NL%%GOLD%FHR%WHITE%: 7, 15, 27, 48, 86, 200%NL%%GOLD%Paladin%WHITE%%NL%}
+ItemDisplay[tbk PLRCLASS(SOR)]: %NAME%{ %GOLD%FCR%WHITE%: 9, 20, 37, 63, 105, 200%NL%%GOLD%FCR%ORANGE%(Lightning)%WHITE%: 7, 15, 23, 35, 52, 78, 117, 194%NL%%GOLD%Faster Block%WHITE%: 7, 15, 27, 48, 86, 200%NL%%GOLD%FHR%WHITE%: 5, 9, 14, 20, 30, 42, 60, 86, 142%NL%%GOLD%Sorceress%WHITE%}
+ItemDisplay[ibk]: %GOLD%%NAME%
 ItemDisplay[tsc TPSCROLLS<10]: %BLUE%TP
 ItemDisplay[isc DIFFICULTY=0]: %GREEN%ID
-ItemDisplay["Tome of Town Portal" PLRCLASS(AMA)]: %NAME%{ %GOLD%FCR%WHITE%: 7, 14, 22, 32, 48, 68, 99, 152%NL%%GOLD%Faster Block%WHITE%: 13, 32, 86%NL%%GOLD%FHR%WHITE%: 6, 13, 20, 32, 52%WHITE%%NL%%ORANGE%(Titans or -10 Base)%GOLD%IAS%WHITE%: 10, 26, 50, 95%NL%%GOLD%Amazon%WHITE%%NL%}
-ItemDisplay["Tome of Town Portal" PLRCLASS(DRU)]: %NAME%{ %GOLD%FHR%ORANGE%(Bear)%WHITE%: 5, 10, 16, 24, 37, 54, 86, 152, 360%NL%%GOLD%FHR%ORANGE%(Wolf)%WHITE%: 9, 20, 42, 86, 280%NL%%GOLD%Fast Block%ORANGE%(Human)%WHITE%: 0, 6, 13 20, 32, 52, 86, 174, 600%NL%%GOLD%Fast Block%ORANGE%(Bear)%WHITE%: 5, 10, 16, 27, 40, 65, 109, 223%NL%%GOLD%Fast Block%ORANGE%(Wolf)%WHITE%: 7, 15, 27, 48, 86, 200%NL%%GOLD%FCR%ORANGE%(Human)%WHITE%: 4, 10, 19, 30, 46, 68, 99, 163%NL%%GOLD%FCR %ORANGE%(Bear)%WHITE%: 7, 15, 26, 40, 63, 99, 163%NL%%GOLD%FCR%ORANGE%(Wolf)%WHITE%: 6, 14, 26, 40, 60, 95, 157%NL%%GOLD%Character%WHITE%%NL%}
-ItemDisplay["Tome of Town Portal" PLRCLASS(ASS)]: %NAME%{ %GOLD%FCR%WHITE%: 8, 16, 27, 42, 65, 102, 174%NL%%GOLD%Faster Block%WHITE%: 13, 32, 86%NL%%GOLD%FHR%WHITE%: 7, 15, 27, 48, 86, 200%NL%%GOLD%Assasin%WHITE%%NL%}
-ItemDisplay["Tome of Town Portal" PLRCLASS(BAR)]: %NAME%{ %GOLD%FCR%WHITE%: 9, 20, 37, 63, 105, 200%NL%%GOLD%Faster Block%WHITE%: 20, 42, 86, 280%NL%%GOLD%FHR%WHITE%: 7, 15, 27, 48, 86, 200%NL%%GOLD%Barbarian%WHITE%%NL%}
-ItemDisplay["Tome of Town Portal" PLRCLASS(NEC)]: %NAME%{ %GOLD%FCR%WHITE%: 9, 18, 30, 48, 75, 125%NL%%GOLD%Faster Block%WHITE%: 6, 13, 20, 32, 52, 86, 174, 600%NL%%GOLD%FHR%WHITE%: 5, 10, 15, 26, 39, 56, 86, 152%NL%%GOLD%Necromancer%WHITE%}
-ItemDisplay["Tome of Town Portal" PLRCLASS(PAL)]: %NAME%{ %GOLD%FCR%WHITE%: 9, 18, 30, 48, 75, 125%NL%%GOLD%Faster Block%ORANGE%(Holy Shield)%WHITE%: 0, 86%NL%%GOLD%Faster Block%WHITE%: 13, 32, 86%NL%%GOLD%FHR%ORANGE%(Spear/Staves)%WHITE%: 3, 7, 13, 20, 32, 48, 75, 129%NL%%GOLD%FHR%WHITE%: 7, 15, 27, 48, 86, 200%NL%%GOLD%Paladin%WHITE%%NL%}
-ItemDisplay["Tome of Town Portal" PLRCLASS(SOR)]: %NAME%{ %GOLD%FCR%WHITE%: 9, 20, 37, 63, 105, 200%NL%%GOLD%FCR%ORANGE%(Lightning)%WHITE%: 7, 15, 23, 35, 52, 78, 117, 194%NL%%GOLD%Faster Block%WHITE%: 7, 15, 27, 48, 86, 200%NL%%GOLD%FHR%WHITE%: 5, 9, 14, 20, 30, 42, 60, 86, 142%NL%%GOLD%Sorceress%WHITE%}
-ItemDisplay[ibk]: %GOLD%%NAME%
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                                        ▬▬▬▬▬ GOLD ▬▬▬▬▬                                       ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
@@ -922,7 +922,7 @@ ItemDisplay[jew UNI ID STAT336>0]: %GOLD%+%STAT(332,0)%]%GREEN% Poison%GOLD%%CON
 ItemDisplay[jew UNI ID STAT336>0]: %GOLD%[-%STAT(336,0)%/%NAME%%CONTINUE%
 ItemDisplay[jew UNI ID STAT357>0]: %GOLD%+%STAT(358,0)%]%WHITE% Magic%GOLD%%CONTINUE%
 ItemDisplay[jew UNI ID STAT357>0]: %GOLD%[-%STAT(357,0)%/%NAME%%CONTINUE%
-ItemDisplay[jew UNI ID STAT399>0]: %GOLD%+%STAT(399,0)%] %LIGHT_GRAY% Phys%GOLD%%CONTINUE%
+ItemDisplay[jew UNI ID STAT399>0]: %GOLD%+%STAT(399,0)%] %LIGHT_GRAY% Physical%GOLD%%CONTINUE%
 ItemDisplay[jew UNI ID STAT399>0]: %GOLD%[-%STAT(400,0)%/%NAME%%CONTINUE%
 ItemDisplay[jew UNI ID]: %NAME%%NL%%GOLD%Rainbow Facet<<HIGH>>
 ItemDisplay[jew MAG !ID FILTERLVL<3]:%SPACE% %BLUE%%NAME% %SPACE% <<JEW>>
@@ -1025,9 +1025,9 @@ ItemDisplay[cm1 MFIND>5 !(MAXDMG>2 OR STAT49>19 OR STAT51>43 OR STAT55>14 OR STA
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //──── Charm Specifics ────
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[MAG cm1 cm2 cm3 !ID FILTERLVL=1]: %NL%%NAME%%NL%%SPACE%<<CHARM>>
-ItemDisplay[MAG cm1 !ID FILTERLVL<6]: %NL%%NAME%%NL%%SPACE%
-ItemDisplay[MAG cm3 !ID]: %NL%%NAME%%NL%%SPACE%
+ItemDisplay[MAG cm1 OR cm2 OR cm3 !ID FILTERLVL=1]: %SPACE%  %BLUE%%NAME%  %SPACE%<<CHARM>>
+ItemDisplay[MAG cm1 !ID FILTERLVL<6]: %SPACE%  %BLUE%%NAME%  %SPACE%
+ItemDisplay[MAG cm3 !ID]: %SPACE%  %BLUE%%NAME%  %SPACE%
 ItemDisplay[(cm1 OR cm2 OR cm3) ID]: %NAME%
 //╔═╦═══════════════════════════════════════════════════════════════════════════════════════════╦═╗
 //║█║███████████████████████████████████████████████████████████████████████████████████████████║█║
@@ -1097,6 +1097,44 @@ ItemDisplay[NMAG !RW SOCK=0 ILVL>40 (crs OR gsd OR 9cr OR 9gd OR 7cr OR 7gd OR m
 ItemDisplay[NMAG !RW SOCK=0 ILVL>40 (flb OR 9fb OR 7fb OR fla OR 9fl OR 7fl OR brn OR 9br OR 7br OR scy OR pax OR 9s8 OR 9pa OR 7s8 OR 7pa OR lbw OR sbb OR swb OR 8lb OR 8s8 OR 8sw OR 6lb OR 6s7 OR 6sw OR rxb OR 8rx OR 6rx OR am1 OR am2 OR am6 OR am7 OR amb OR amc)]: %NAME%{%NAME%5S}%CONTINUE% // ILVL>40 LQ _5
 ItemDisplay[NMAG !RW SOCK=0 ILVL>40 (uit OR uow OR uts)]: %NAME%{%NAME%4S}%CONTINUE% // ILVL>40 LQ _4
 ItemDisplay[NMAG !RW SOCK=0 ILVL>40 (msk OR xsk OR usk OR uh9 OR ghm OR xhm OR uhm OR crn OR xrn OR urn OR ci2 OR ci3)]: %NAME%{%NAME%3S}%CONTINUE% // ILVL>40 LQ _3
+//╔═╦═══════════════════════════════════════════════════════════════════════════════════════════╦═╗
+//║█║                                    ▬▬▬▬▬ SHOPPING ▬▬▬▬▬                                   ║█║
+//╚═╩═══════════════════════════════════════════════════════════════════════════════════════════╩═╝
+ItemDisplay[CHSK91=1 MAG !RW]: %DGREEN% [Lower ResistLv.1] 
+ItemDisplay[CHSK91=2 MAG !RW]: %DGREEN% [Lower ResistLv.2] 
+ItemDisplay[CHSK91=3 MAG !RW]: %DGREEN% [Lower ResistLv.3] 
+ItemDisplay[CHSK82>0 MAG !RW]: %DGREEN% [Life Tap]
+//╔═╦═══════════════════════════════════════════════════════════════════════════════════════════╦═╗
+//║█║                                    ▬▬▬▬▬ Necro Leveling ▬▬▬▬▬                                   ║█║
+//╚═╩═══════════════════════════════════════════════════════════════════════════════════════════╩═╝ 
+EnableIf[PLRCLASS(NEC) FILTERLVL=1]
+	ItemDisplay[CLVL<45 STORAGE(SHOP) CHARGES("Teleport")]: %NOTIFY(ITEM)%Teleport Staff 
+	ItemDisplay[CLVL<35 CL4 SKILL("Bone Spear")=1 !RW ]: %GRAY%[Bone Spear +1 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<55 CL4 SKILL("Bone Spear")=2 !RW ]: %GRAY%[Bone Spear +2 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<85 CL4 SKILL("Bone Spear")=3 !RW ]: %GRAY%[Bone Spear +3 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<25 WP12 SKILL("Bone Spear")=1 !RW ]: %GRAY%[Bone Spear +1]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<35 WP12 SKILL("Bone Spear")=2 !RW ]: %GRAY%[Bone Spear +2]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<60 WP12 SKILL("Bone Spear")=3 !RW ]: %GRAY%[Bone Spear +3]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<75 WP13 NMAG SOCK=4 ]: %GRAY%[Holy Thunder]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<20 EQ1 NMAG SOCK=2 ]: %GRAY%[Lore]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<20 EQ2 NMAG SOCK=2 ]: %GRAY%[Stealth]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<30 EQ3 NMAG SOCK=3 ]: %GRAY%[Ancients Pledge]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=1 !RW ]: %GRAY%[Teeth +1]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=2 !RW ]: %GRAY%[Teeth +2]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=3 !RW ]: %GRAY%[Teeth +3]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=1 !RW ]: %GRAY%[Teeth +1 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=2 !RW ]: %GRAY%[Teeth +2 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=3 !RW ]: %GRAY%[Teeth +3 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<30 CL4 MAG ]: %Blue%[Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<25 WP12 SKILL("Hemorrhage")=1 !RW ]: %GRAY%[Hemorrhage +1]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<35 WP12 SKILL("Hemorrhage")=2 !RW ]: %GRAY%[Hemorrhage +2]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<60 WP12 SKILL("Hemorrhage")=3 !RW ]: %GRAY%[Hemorrhage +3]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<35 CL4 SKILL("Hemorrhage")=1 !RW ]: %GRAY%[Hemorrhage +1 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<55 CL4 SKILL("Hemorrhage")=2 !RW ]: %GRAY%[Hemorrhage +2 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<85 CL4 SKILL("Hemorrhage")=3 !RW ]: %GRAY%[Hemorrhage +3 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<75 WP12 NMAG !RW !SOCK=1 !wnd !ywn !9wn SKILL("Bone Spear")=3 ]: %GRAY%[Bone Spear White]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<75 WP12 NMAG !RW SOCK=2 !wnd !ywn !9wn SKILL("Bone Spear")=3 ]: %GRAY%[Bone Spear White 2os]%NOTIFY(ITEM)%
+EndIf[]
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //──── Superior ────
 //─────────────────────────────────────────────────────────────────────────────────────────────────
@@ -1516,21 +1554,13 @@ ItemDisplay[(WEAPON OR ARMOR) !NORM NMAG !INF !RW CLVL<30 FILTERLVL=1]: %NAME%
 ItemDisplay[(WEAPON OR ARMOR) !NORM NMAG !INF !RW CLVL<40 SOCK>0 FILTERLVL=1]: %NAME% 
 ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !INF !RW CLVL<60 FILTERLVL=1]: %NAME% 
 //╔═╦═══════════════════════════════════════════════════════════════════════════════════════════╦═╗
-//║█║                                    ▬▬▬▬▬ SHOPPING ▬▬▬▬▬                                   ║█║
-//╚═╩═══════════════════════════════════════════════════════════════════════════════════════════╩═╝
-ItemDisplay[CHSK91=1 MAG !RW]: %DGREEN% [Lower ResistLv.1] 
-ItemDisplay[CHSK91=2 MAG !RW]: %DGREEN% [Lower ResistLv.2] 
-ItemDisplay[CHSK91=3 MAG !RW]: %DGREEN% [Lower ResistLv.3] 
-ItemDisplay[CHSK82>0 MAG !RW]: %DGREEN% [Life Tap] 
-ItemDisplay[CHSK53>0 MAG !RW]: %DGREEN% [TP] 
-//╔═╦═══════════════════════════════════════════════════════════════════════════════════════════╦═╗
 //║█║                                      ▬▬▬▬▬ $$$ ▬▬▬▬▬                                      ║█║
 //╚═╩═══════════════════════════════════════════════════════════════════════════════════════════╩═╝
-ItemDisplay[CL6 !(ob5 OR oba OR obf) MAG !RW ID ILVL>50 PRICE>24999 FILTERLVL<4]: $$$%DGREEN%(%PRICE%) 
-ItemDisplay[WP12 MAG !RW ID ILVL>50 PRICE>24999 FILTERLVL<4]: $$$%DGREEN%(%PRICE%) 
-ItemDisplay[(7tk OR 7ta OR 7bk) (NMAG OR MAG OR RARE) !RW !ETH FILTERLVL<4]: $$$%DGREEN%(%PRICE%) 
-ItemDisplay[CL6 NMAG !RW ILVL>40 PRICE>24999 FILTERLVL<4]: $$$%DGREEN%(%PRICE%) 
-ItemDisplay[WP12 NMAG !RW ILVL>40 PRICE>24999 FILTERLVL<4]: $$$%DGREEN%(%PRICE%) 
+ItemDisplay[CL6 !(ob5 OR oba OR obf) MAG !RW ID ILVL>50 PRICE>24999 FILTERLVL<4]: %GRAY%(%PRICE%) 
+ItemDisplay[WP12 MAG !RW ID ILVL>50 PRICE>24999 FILTERLVL<4]: %GRAY%(%PRICE%) 
+ItemDisplay[(7tk OR 7ta OR 7bk) (NMAG OR MAG OR RARE) !RW !ETH FILTERLVL<4]: %GRAY%(%PRICE%) 
+ItemDisplay[CL6 NMAG !RW ILVL>40 PRICE>24999 FILTERLVL<4]: %GRAY%(%PRICE%) 
+ItemDisplay[WP12 NMAG !RW ILVL>40 PRICE>24999 FILTERLVL<4]: %GRAY%(%PRICE%) 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //──── Gambling high light(Circlet only,Add any Item you wants to gamble)────
 //─────────────────────────────────────────────────────────────────────────────────────────────────
