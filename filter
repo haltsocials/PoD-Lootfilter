@@ -1125,7 +1125,7 @@ EnableIf[PLRCLASS(NEC) FILTERLVL=1]
 	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=1 !RW ]: %GRAY%[Teeth +1 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=2 !RW ]: %GRAY%[Teeth +2 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=3 !RW ]: %GRAY%[Teeth +3 Totem]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<30 CL4 MAG ]: %Blue%[Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<30 CL4 MAG ]:[Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 WP12 SKILL("Hemorrhage")=1 !RW ]: %GRAY%[Hemorrhage +1]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<35 WP12 SKILL("Hemorrhage")=2 !RW ]: %GRAY%[Hemorrhage +2]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<60 WP12 SKILL("Hemorrhage")=3 !RW ]: %GRAY%[Hemorrhage +3]%NOTIFY(ITEM)%
