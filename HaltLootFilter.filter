@@ -1111,7 +1111,7 @@ ItemDisplay[CHSK82>0 MAG !RW]: %DGREEN% [Life Tap]
 //║█║                                    ▬▬▬▬▬ Necro Leveling ▬▬▬▬▬                                   ║█║
 //╚═╩═══════════════════════════════════════════════════════════════════════════════════════════╩═╝ 
 EnableIf[PLRCLASS(NEC) FILTERLVL=1]
-	ItemDisplay[CLVL<45 STORAGE(SHOP) CHARGES("Teleport")]: %NOTIFY(ITEM)%Teleport Staff 
+	ItemDisplay[CLVL<45 STORAGE(SHOP) CHARGES("Teleport")]: %NOTIFY(ITEM)%%DGREEN%Teleport Staff 
 	ItemDisplay[CLVL<35 CL4 SKILL("Bone Spear")=1 !RW ]: %GRAY%[Bone Spear +1 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<55 CL4 SKILL("Bone Spear")=2 !RW ]: %GRAY%[Bone Spear +2 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<85 CL4 SKILL("Bone Spear")=3 !RW ]: %GOLD%[Bone Spear +3 Totem]%NOTIFY(ITEM)%
