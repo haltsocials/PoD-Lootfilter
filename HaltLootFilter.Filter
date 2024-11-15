@@ -4,11 +4,12 @@
 //║█║ http://pathofdiablo.com/wiki/index.php/Loot_Filtration                                    ║█║
 //║█║ https://pathofdiablo.com/wiki/index.php?title=Talk:Loot_Filtration_Codes#Edit_Permissions ║█║           
 //║█║ https://raw.githubusercontent.com/vincent427/BathingCardinal_Pod_Lootfilter/main/Bathing_Chi.filter
-//║█║https://raw.githubusercontent.com/haltsocials/PoD-Lootfilter/refs/heads/main/filter	║█║
-//║█║ Fork of vincent427's translation of BathingCardinal Filter				║█║
+//║█║ https://raw.githubusercontent.com/haltsocials/PoD-Lootfilter/main/filter			║█║
+//║█║ Fork of vincent427's translation of BathingCardinal Filter, with code from Mackandmusic	║█║
 //║█║ If you find any bugs when using my filter,please open a issue and let me know             ║█║
 //╠═╬═══════════════════════════════════════════════════════════════════════════════════════════╬═╣
 //║█║███████████████████████████████████████████████████████████████████████████████████████████║█║
+//╚═╩═══════════════════════════════════════════════════════════════════════════════════════════╩═╝
 //╚═╩═══════════════════════════════════════════════════════════════════════════════════════════╩═╝
 Attribute[Author]: Halt 
 Attribute[Name]: PoD Loot Filter
@@ -669,22 +670,22 @@ ItemDisplay[hdm]: %NAME%{%TAN%Bestowed to The Sisters of The Sightless Eye%NL%En
 // QUEST ITEMS (ACT 2)
 ItemDisplay[ass]: %NAME%{%GOLD%Right Click to Read%NL%%GRAY%(Grants +1 Skill Point Permanently)%NL%%NL%%TAN%Learned Are Those Who Stay Awhile And Listen.}
 ItemDisplay[tr1]: %NAME%{%TAN%Onward, The Tomb of Tal Rasha%NL%Found, The Details of The Binding of Baal%NL%Slain, Radament The Fallen, Mummified Horadrim}
-ItemDisplay[box]: %NAME%{%RED%Slam Ur God Damn Items!%NL%Don't Be A Pussy!}
-ItemDisplay[msf]: %NAME%{%TAN%A Relic of Royalty, withered of Dust%NL%Beneath The Tunnels Woven of Arthropods}
-ItemDisplay[vip]: %NAME%{%TAN%Fangskin The Salamander Abides%NL%An Endless Eclipse, Buried in Scales%NL%Amidst The Darkness, An Amulet Unworn}
+ItemDisplay[box]: %NAME%
+ItemDisplay[msf]: Staff of the Kings{%TAN%A Relic of Royalty, withered of Dust%NL%Beneath The Tunnels Woven of Arthropods}
+ItemDisplay[vip]: %GOLD%%NAME%{%TAN%Fangskin The Salamander Abides%NL%An Endless Eclipse, Buried in Scales%NL%Amidst The Darkness, An Amulet Unworn}
 ItemDisplay[hst]: %NAME%{%TAN%The Mage Clans United%NL%In Archangel Tyrael Confided%NL%The Dark Exile Provided}
 // QUEST ITEMS (ACT 3)
-ItemDisplay[j34]: %NAME%{%TAN%The Mage Clans United%NL%In Archangel Tyrael Confided%NL%The Dark Exile Provided}
-ItemDisplay[g34]: %NAME%{%TAN%Death is The Life After%NL%The Ashes of Ku Y'leh%NL%An Urn of Immortality}
-ItemDisplay[xyz]: %NAME%{%GOLD%Right Click to Drink%NL%%GRAY%(Grants +20 to Maximum Life Permanently)%NL%%NL%%TAN%Forever is Composed of Nows.}
-ItemDisplay[g33]: %NAME%{%TAN%Lost in Fervor of Zakarum%NL%Furnished by Skatsimi%NL%Point Edged of Sorcery}
-ItemDisplay[qey]: %NAME%{%TAN%Conception is Evoked Through The Medium of The Eye.}
-ItemDisplay[qbr]: %NAME%{%TAN%The Brain is a Commodity Used to Fertilize Ideas.}
-ItemDisplay[qhr]: %NAME%{%TAN%The Heart Has Its Reasons of Which Reason Knows Nothing.}
-ItemDisplay[qf1]: %NAME%{%TAN%Que-Hegan of Zakarum%NL%Khalim The Uncorruptible}
-ItemDisplay[qf2]: %NAME%{%TAN%Will is to Grace as The Horse is to The Rider.}
-ItemDisplay[bbb]: %NAME%{%TAN%Prime Evil Influences%NL%Ancient Kehjani Mysticism%NL%Within Can be Known:}
-ItemDisplay[mss]: %NAME%{%TAN%Doomed to Black Abyss%NL%Hatred Unbound Eminates}
+ItemDisplay[j34]: %GOLD%%NAME%{%TAN%The Mage Clans United%NL%In Archangel Tyrael Confided%NL%The Dark Exile Provided}
+ItemDisplay[g34]: %GOLD%%NAME%{%TAN%Death is The Life After%NL%The Ashes of Ku Y'leh%NL%An Urn of Immortality}
+ItemDisplay[xyz]: %GOLD%%NAME%{%GOLD%Right Click to Drink%NL%%GRAY%(Grants +20 to Maximum Life Permanently)%NL%%NL%%TAN%Forever is Composed of Nows.}
+ItemDisplay[g33]: %GOLD%%NAME%{%TAN%Lost in Fervor of Zakarum%NL%Furnished by Skatsimi%NL%Point Edged of Sorcery}
+ItemDisplay[qey]: %GOLD%%NAME%{%TAN%Conception is Evoked Through The Medium of The Eye.}
+ItemDisplay[qbr]: %GOLD%%NAME%{%TAN%The Brain is a Commodity Used to Fertilize Ideas.}
+ItemDisplay[qhr]: %GOLD%%NAME%{%TAN%The Heart Has Its Reasons of Which Reason Knows Nothing.}
+ItemDisplay[qf1]: %GOLD%%NAME%{%TAN%Que-Hegan of Zakarum%NL%Khalim The Uncorruptible}
+ItemDisplay[qf2]: %GOLD%%NAME%{%TAN%Will is to Grace as The Horse is to The Rider.}
+ItemDisplay[bbb]: %GOLD%%NAME%{%TAN%Prime Evil Influences%NL%Ancient Kehjani Mysticism%NL%Within Can be Known:}
+ItemDisplay[mss]: %GOLD%%NAME%{%TAN%Doomed to Black Abyss%NL%Hatred Unbound Eminates}
 // QUEST ITEMS (ACT 4)
 ItemDisplay[hfh]: %NAME%{%TAN%Forger of Shadowfang%NL%Legend of The Burning Hells}
 // QUEST ITEMS (ACT 5)
@@ -1117,17 +1118,18 @@ EnableIf[PLRCLASS(NEC) FILTERLVL=1]
 	ItemDisplay[CLVL<25 WP12 SKILL("Bone Spear")=1 !RW ]: %GRAY%[Bone Spear +1]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<35 WP12 SKILL("Bone Spear")=2 !RW ]: %GRAY%[Bone Spear +2]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<60 WP12 SKILL("Bone Spear")=3 !RW ]: %GRAY%[Bone Spear +3]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<75 WP13 NMAG SOCK=4 ]: %GRAY%[Holy Thunder]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<20 EQ1 NMAG SOCK=2 ]: %GRAY%[Lore]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<20 EQ2 NMAG SOCK=2 ]: %GRAY%[Stealth]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<30 EQ3 NMAG SOCK=3 ]: %GRAY%[Ancients Pledge]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<75 WP13 !ETH NMAG SOCK=4 ]: %GRAY%[Holy Thunder]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<30 EQ1 !ETH !CL2 !CL1 NMAG SOCK=2 ]: %GRAY%[Lore]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<20 EQ2 !ETH NMAG SOCK=2 ]: %GRAY%[Stealth]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<30 EQ3 !ETH !CL3 NMAG SOCK=3 ]: %GRAY%[Ancients Pledge]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=1 !RW ]: %GRAY%[Teeth +1]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=2 !RW ]: %GRAY%[Teeth +2]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=3 !RW ]: %GRAY%[Teeth +3]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=1 !RW ]: %GRAY%[Teeth +1 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=2 !RW ]: %GRAY%[Teeth +2 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=3 !RW ]: %GRAY%[Teeth +3 Totem]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<30 CL4 MAG ]:Totem%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<60 CL4 !ID MAG]: %BLUE%%NAME%%NOTIFY(WHITE)%
+	ItemDisplay[CLVL<70 CL4 !ID RARE]: %YELLOW%%NAME%%NOTIFY(WHITE)%
 	ItemDisplay[CLVL<25 WP12 SKILL("Hemorrhage")=1 !RW ]: %GRAY%[Hemorrhage +1]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<35 WP12 SKILL("Hemorrhage")=2 !RW ]: %GRAY%[Hemorrhage +2]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<60 WP12 SKILL("Hemorrhage")=3 !RW ]: %GRAY%[Hemorrhage +3]%NOTIFY(ITEM)%
