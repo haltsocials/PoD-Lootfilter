@@ -1515,8 +1515,8 @@ ItemDisplay[(zvb OR uvc) !ETH MAG !ID CLVL<60 FILTERLVL=1]: %NAME%%ORANGE% [cast
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[(WEAPON OR ARMOR) RARE CLVL<60 !ID FILTERLVL=1]: %NAME%   
 ItemDisplay[(WEAPON OR ARMOR) ELT RARE CLVL<80 !ID FILTERLVL=1]: %NAME%   
-ItemDisplay[EQ7 RARE !ID FILTERLVL<6]: %NL%%NAME%%NL%%SPACE%%NOTIFY(ITEM)%
-ItemDisplay[(rin OR amu) RARE !ID FILTERLVL<6]: %NL%%NAME%%NL%%SPACE%%NOTIFY(ITEM)%
+ItemDisplay[EQ7 RARE !ID FILTERLVL<6]: %YELLOW%%NAME%%NOTIFY(WHITE)%
+ItemDisplay[(rin OR amu) RARE !ID FILTERLVL<6]: %YELLOW%%NAME%%NOTIFY(WHITE)%
 ItemDisplay[(crs OR 9cr OR 7cr OR mpi OR wax OR 9mp OR 9wa OR 7mp OR 7wa OR WP12 OR CL6) RARE !ID FILTERLVL<4]: %NAME%   
 ItemDisplay[(CL5 OR am5 OR ama OR amf) RARE !ID FILTERLVL<4]: %NAME%%BORDER(85,1)%%BGCOLOR(60)%  
 ItemDisplay[(aq2 OR cq2) RARE !ID FILTERLVL<4]: %NAME%%BORDER(85,1)%%BGCOLOR(60)%  
@@ -1528,7 +1528,7 @@ ItemDisplay[(WEAPON OR ARMOR OR aq2 OR cq2 OR rin OR amu) (RARE OR CRAFT) ID]: %
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[(xul OR xmg OR uh9 OR utc OR ne9) SET !ID]: %NL%%GREEN%Trang %NAME%%NL%<<LOW>>
 ItemDisplay[SET !ID (7qr OR xtb OR uar OR xmg OR uth OR amu)]: %NL%%NAME%%NL%%SPACE%<<MID>>
-ItemDisplay[(uh9 OR utc OR ne9 OR ulg OR oba OR ucl OR 7gd OR 7wd OR xul) SET !ID FILTERLVL<6]: %NAME%%NOTIFY(ITEM)%
+ItemDisplay[(uh9 OR utc OR ne9 OR ulg OR oba OR ucl OR 7gd OR 7wd OR xul) SET !ID FILTERLVL<6]: %GREEN%%NAME%%NOTIFY(WHITE)%
 ItemDisplay[SET !ID FILTERLVL<4]: %NAME% 
 ItemDisplay[SET ID]: %NAME%%NL%%GREEN%%ITEMNAME% 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
