@@ -38,7 +38,7 @@ Option[IgnoreMissingSounds]: True
 ItemStyle[LOW]: MapIcon = 26, NotificationColor = WHITE, NotificationSound = 418
 ItemStyle[MID]: MapIcon = 26, NotificationColor = WHITE, NotificationSound = 35
 ItemStyle[HIGH]: MapIcon = 26, NotificationColor = WHITE, NotificationSound = 34
-ItemStyle[MAP]: MapIcon = 10, NotificationColor = WHITE
+ItemStyle[MAP]: MapIcon = 10, NotificationColor = WHITE, NotificationSound = 418
 ItemStyle[RUNE]: MapIcon = 15,NotificationColor = WHITE
 ItemStyle[CHARM]: MapIcon = 31, NotificationColor = WHITE
 ItemStyle[JEW]: MapIcon = 5, NotificationColor = WHITE
@@ -813,7 +813,7 @@ ItemDisplay[glg FILTERLVL<4]: %GRAY%[%GREEN%Ⓞ%GRAY%]
 ItemDisplay[glr FILTERLVL<6]: %GRAY%[%RED%Ⓞ%GRAY%]
 ItemDisplay[glb FILTERLVL<4]: %GRAY%[%BLUE%Ⓞ%GRAY%]
 ItemDisplay[gly FILTERLVL<4]: %GRAY%[%YELLOW%Ⓞ%GRAY%]
-ItemDisplay[skl]: %NL%  %GRAY%[%GOLD%Ⓞ%GRAY%]  %NL%%NOTIFY(ITEM)%
+ItemDisplay[skl]: %NL%  %GRAY%[%GOLD%Ⓞ%GRAY%]  %NL%<<LOW>>
 ItemDisplay[gpv]: %YELLOW%[%PURPLE%Ⓞ%YELLOW%]
 ItemDisplay[gpw]: %YELLOW%[%WHITE%Ⓞ%YELLOW%]
 ItemDisplay[gpg]: %YELLOW%[%GREEN%Ⓞ%YELLOW%]
