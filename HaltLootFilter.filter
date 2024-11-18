@@ -715,9 +715,9 @@ ItemDisplay[fed]: %NL%%NAME%%NL%%SPACE%<<MID>>{%WHTIE%Baal}
 ItemDisplay[std]: %SPACE%    %GOLD%%NAME%    %SPACE%
 ItemDisplay[leg]: %GOLD%%NAME%
 ItemDisplay[cx5]: %NAME%<<LOW>>{%GOLD%Relic:%WHITE%Pleasant Pasture%TAN%[3.4%]%WHITE%, Gains a new Affix%TAN%[23.6%]%WHITE%, CNC%TAN%[25%]%WHITE%, Random new Rare Relic%TAN%[48%]%NL%%GOLD%Socketable Item:%WHITE%Gains Sockets(*)%TAN%[25%]%WHITE%, Gains a new Affix%TAN%[25%]%WHITE%, CNC%TAN%[25%]%WHITE%, Wasted%TAN%[25%]%NL%%GOLD%Unsocketable Item:%WHITE%Gains a new Affix%TAN%[25%]%WHITE%, CNC%TAN%[50%]%WHITE%, Wasted%TAN%[25%]%NL%%WHITE%}
-ItemDisplay[cx9]: %BLUE%Orb of Alteration<<MAP>>{%WHITE%Reroll Map to new one of the same tier with new stats%NL%}
+ItemDisplay[cx9]: %PURPLE%Orb of Alteration<<MAP>>{%WHITE%Reroll Map to new one of the same tier with new stats%NL%}
 ItemDisplay[cx6]: %SPACE%    %GOLD%Diablo Soulstone    %SPACE%<<MID>>
-ItemDisplay[cx7]: %SPACE%    %GOLD%Key of Chaos    %SPACE%%NOTIFY(ITEM)% 
+ItemDisplay[cx7]: %SPACE%    %GOLD%Key of Chaos    %SPACE%%NOTIFY(WHITE)% 
 ItemDisplay[ear]: %GOLD%%NAME%
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                                      ▬▬▬▬▬ (Relic) ▬▬▬▬▬                                      ║ 
@@ -816,7 +816,7 @@ ItemDisplay[glg FILTERLVL<4]: %GRAY%[%GREEN%Ⓞ%GRAY%]
 ItemDisplay[glr FILTERLVL<6]: %GRAY%[%RED%Ⓞ%GRAY%]
 ItemDisplay[glb FILTERLVL<4]: %GRAY%[%BLUE%Ⓞ%GRAY%]
 ItemDisplay[gly FILTERLVL<4]: %GRAY%[%YELLOW%Ⓞ%GRAY%]
-ItemDisplay[skl]: %NL%  %GRAY%[%GOLD%Ⓞ%GRAY%]  %NL%<<LOW>>
+ItemDisplay[skl]: %NL%  %GRAY%[%GOLD%ⓄⓄⓄ%GRAY%]  %NL%<<LOW>>
 ItemDisplay[gpv]: %YELLOW%[%PURPLE%Ⓞ%YELLOW%]
 ItemDisplay[gpw]: %YELLOW%[%WHITE%Ⓞ%YELLOW%]
 ItemDisplay[gpg]: %YELLOW%[%GREEN%Ⓞ%YELLOW%]
@@ -914,7 +914,7 @@ ItemDisplay[jew STAT1>0 (STAT17>24 OR STAT17>24 OR RES>5 OR MAEK>0 OR STAT39>15 
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //──── Jew Specifics ────
 //───────────────────────────────────────────────────────────────────────────────────────────────── 
-ItemDisplay[jew UNI !ID]: %NL%%GOLD%Rainbow Facet %SPACE%<<HIGH>>
+ItemDisplay[jew UNI !ID]: %NL%%GOLD%✠  %GOLD%%NAME%  %GOLD%✠%NL%%SPACE%<<HIGH>>
 ItemDisplay[jew UNI ID STAT333>0]: %GOLD%+%STAT(329,0)%]%RED% Fire%GOLD%%CONTINUE%
 ItemDisplay[jew UNI ID STAT333>0]: %GOLD%[-%STAT(333,0)%/%NAME%%CONTINUE%
 ItemDisplay[jew UNI ID STAT334>0]: %GOLD%+%STAT(330,0)%]%YELLOW% Lightning%GOLD%%CONTINUE%
@@ -1028,9 +1028,10 @@ ItemDisplay[cm1 MFIND>5 !(MAXDMG>2 OR STAT49>19 OR STAT51>43 OR STAT55>14 OR STA
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 //──── Charm Specifics ────
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[MAG cm1 OR cm2 OR cm3 !ID FILTERLVL=1]: %SPACE%  %BLUE%%NAME%  %SPACE%<<CHARM>>
+ItemDisplay[MAG cm1 OR cm3 !ID FILTERLVL=1]: %SPACE%  %BLUE%%NAME%  %SPACE%<<CHARM>>
+ItemDisplay[MAG cm2 CLVL<85 !ID FILTERLVL=1]: %SPACE%  %BLUE%%NAME%  %SPACE%<<CHARM>>
 ItemDisplay[MAG cm1 !ID FILTERLVL<6]: %SPACE%  %BLUE%%NAME%  %SPACE%
-ItemDisplay[MAG cm3 !ID]: %SPACE%  %BLUE%%NAME%  %SPACE%
+ItemDisplay[MAG cm3 !ID]: %SPACE%  %BLUE%%NAME%  %SPACE%<<CHARM>>
 ItemDisplay[(cm1 OR cm2 OR cm3) ID]: %NAME%
 //╔═╦═══════════════════════════════════════════════════════════════════════════════════════════╦═╗
 //║█║███████████████████████████████████████████████████████████████████████████████████████████║█║
@@ -1135,7 +1136,9 @@ EnableIf[PLRCLASS(NEC) FILTERLVL=1]
 	ItemDisplay[CLVL<60 WP12 SKILL("Hemorrhage")=3 !RW ]: %GOLD%[Hemorrhage +3]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<35 CL4 SKILL("Hemorrhage")=1 !RW ]: %GRAY%[Hemorrhage +1 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<55 CL4 SKILL("Hemorrhage")=2 !RW ]: %GRAY%[Hemorrhage +2 Totem]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<85 CL4 SKILL("Hemorrhage")=3 !RW ]: %GOLD%[Hemorrhage +3 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<95 CL4 SKILL("Hemorrhage")=3 !RW ]: %GOLD%[Hemorrhage +3 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<95 WP12 NMAG !RW !SOCK=1 !wnd !ywn !9wn SKILL("Bone Armor")=3 ]: %GRAY%[Bone Armor White]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<95 CL4 NMAG !RW !SOCK=1 !wnd !ywn !9wn SKILL("Bone Armor")=3 ]: %GRAY%[Bone Armor Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<75 WP12 NMAG !RW !SOCK=1 !wnd !ywn !9wn SKILL("Bone Spear")=3 ]: %GRAY%[Bone Spear White]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<75 WP12 NMAG !RW SOCK=2 !wnd !ywn !9wn SKILL("Bone Spear")=3 ]: %GOLD%[Bone Spear White 2os]%NOTIFY(ITEM)%
 EndIf[]
@@ -1531,7 +1534,7 @@ ItemDisplay[(WEAPON OR ARMOR OR aq2 OR cq2 OR rin OR amu) (RARE OR CRAFT) ID]: %
 //║                                        ▬▬▬▬▬ SET ▬▬▬▬▬                                        ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[(xul OR xmg OR uh9 OR utc OR ne9) SET !ID]: %NL%%GREEN%Trang %NAME%%NL%<<LOW>>
-ItemDisplay[SET !ID (7qr OR xtb OR uar OR xmg OR uth OR amu)]: %NL%%NAME%%NL%%SPACE%<<MID>>
+ItemDisplay[SET !ID (7qr OR xtb OR uar OR xmg OR uth OR amu)]: %NL%%GREEN%%NAME%%NL%%SPACE%<<MID>>
 ItemDisplay[(uh9 OR utc OR ne9 OR ulg OR oba OR ucl OR 7gd OR 7wd OR xul) SET !ID FILTERLVL<6]: %GREEN%%NAME%%NOTIFY(WHITE)%
 ItemDisplay[SET !ID FILTERLVL<4]: %NAME% 
 ItemDisplay[SET ID]: %NAME%%NL%%GREEN%%ITEMNAME% 
@@ -1545,7 +1548,7 @@ ItemDisplay[(ama OR 7pa OR uvb OR 7s8) UNI ETH !ID]: %NL%%GOLD%✠%GRAY%✠ %RED
 //──── High price ────
 ItemDisplay[(rin OR amu OR ulc OR ci3 OR uar) UNI !ID]: %NL%%GOLD%✠✠%GOLD%  %NAME%  %GOLD%✠✠%NL%%SPACE%<<HIGH>>
 //──── Not bad ────
-ItemDisplay[(ama OR 6lw OR oba OR obc OR 6cs OR 7wa OR 7gi OR 7gd OR 7cr OR 7gw OR obf OR baa OR dra OR dre OR xea OR xhn OR xpl OR upl OR utu OR zhb OR zvb OR xmb OR xtb OR uvg OR uhg OR uap OR ulm OR uhm OR usk OR xh9 OR pa9 OR uit OR nea OR nef OR pac) UNI !ID]: %NL%%GOLD%✠  %GOLD%%NAME%  %GOLD%✠%NL%%SPACE%<<MID>>
+ItemDisplay[(uow OR ama OR 6lw OR oba OR obc OR 6cs OR 7wa OR 7gi OR 7gd OR 7cr OR 7gw OR obf OR baa OR dra OR dre OR xea OR xhn OR xpl OR upl OR utu OR zhb OR zvb OR xmb OR xtb OR uvg OR uhg OR uap OR ulm OR uhm OR usk OR xh9 OR pa9 OR uit OR nea OR nef OR pac) UNI !ID]: %NL%%GOLD%✠  %GOLD%%NAME%  %GOLD%✠%NL%%SPACE%<<MID>>
 ItemDisplay[UNI !ID FILTERLVL<6]: %NAME%  
 ItemDisplay[UNI ID]: %NAME%%NL%%GOLD%%ITEMNAME% 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
