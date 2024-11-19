@@ -723,17 +723,18 @@ ItemDisplay[ear]: %GOLD%%NAME%
 //║                                      ▬▬▬▬▬ (Relic) ▬▬▬▬▬                                      ║ 
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[ma10 !ID]:%NAME%%NL%%GRAY%T2-Lv87{%WHITE%(Icy Cavern)} <<MAP>>
-ItemDisplay[ma2 !ID]:%NAME%%NL%%GRAY%T3-Lv88{%WHITE%(Forgotten Desert)} <<MAP>>
+ItemDisplay[ma2 !ID]:%NAME%%NL%%RED%T3-Lv88{%WHITE%(Forgotten Desert)} <<MAP>>
 ItemDisplay[ma3 !ID]:%NAME%%NL%%GRAY%T?-Lv??{%WHITE%(Abandoned Precinct)} <<MAP>> 
 ItemDisplay[ma4 !ID]:%NAME%%NL%%GRAY%T2-Lv87{%WHITE%(Desecrated Temple)} <<MAP>> 
-ItemDisplay[ma5 !ID]:%NAME%%NL%%GRAY%T3-Lv88{%WHITE%(Frigid Plateau)} <<MAP>>
-ItemDisplay[ma6 !ID]:%NAME%%NL%%GRAY%T3-Lv88{%WHITE%(Ruined Citadel)} <<MAP>>
-ItemDisplay[ma7 !ID]:%NAME%%NL%%GRAY%T3-Lv88{%WHITE%(Burnt Forest)} <<MAP>>
-ItemDisplay[ma8 !ID]:%NAME%%NL%%GRAY%T3-Lv88{%WHITE%(Musty Crypt)} <<MAP>> 
+ItemDisplay[ma5 !ID]:%NAME%%NL%%RED%T3-Lv88{%WHITE%(Frigid Plateau)} <<MAP>>
+ItemDisplay[ma6 !ID]:%NAME%%NL%%RED%T3-Lv88{%WHITE%(Ruined Citadel)} <<MAP>>
+ItemDisplay[ma7 !ID]:%NAME%%NL%%RED%T3-Lv88{%WHITE%(Burnt Forest)} <<MAP>>
+ItemDisplay[ma8 !ID]:%NAME%%NL%%RED%T3-Lv88{%WHITE%(Musty Crypt)} <<MAP>> 
 ItemDisplay[ma9 !ID]:%NAME%%NL%%GRAY%T2-Lv87{%WHITE%(Dim Cellar)} <<MAP>>
 ItemDisplay[ma11 !ID]:%NAME%%NL%%GRAY%T0-Lv86{%WHITE%(Pleasant Pasture)} <<MAP>> 
 ItemDisplay[ma12 !ID]:%NAME%%NL%%GRAY%T1-Lv86{%WHITE%(Baleful Alcazar)} <<MAP>>
 ItemDisplay[ma13 !ID]:%NAME%%NL%%GRAY%T1-Lv86{%WHITE%(Decomposing Settlement)} <<MAP>>
+ItemDisplay[ma14 !ID]:%NAME%%NL%%GRAY%T2-Lv87{%WHITE%(Abyssal Furnace)} <<MAP>>
 ItemDisplay[MAP !ID]:NEW RELIC%NL%%WHITE%** T?-Lv?? **<<MAP>>
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 ItemDisplay[ma10]: Icy Cavern%NL%%GRAY%T2-Lv87 <<MAP>> {%NL%Immunities:%RED%*F:140,%GOLD%*P:100%NL%%WHITE%High Res:%BLUE%C:87,%RED%F:80,%YELLOW%L:80,%ORANGE%M:75,%GOLD%P:90,%DGREEN%P:80%NL%%ORANGE%Monster Base Resistances and Immunities:} 
@@ -748,6 +749,7 @@ ItemDisplay[ma9]: Dim Cellar%NL%%GRAY%T2-Lv87 <<MAP>>  {%NL%Immunities:%BLUE%*C:
 ItemDisplay[ma11]: Pleasant Pasture%NL%%GRAY%T0-Lv86<<MAP>> {%NL%High Res:%BLUE%C:50,%RED%F:50,%YELLOW%L:50,%ORANGE%M:33,%GOLD%P:50,%DGREEN%P:33%NL%%ORANGE%Monster Base Resistances and Immunities:} 
 ItemDisplay[ma12]: Baleful Alcazar%NL%%GRAY%T1-Lv86 <<MAP>> {%WHITE%High Res:%BLUE%C:66,%RED%F:75,%YELLOW%L:66,%ORANGE%M:80,%GOLD%P:50,%DGREEN%P:66%NL%%ORANGE%Monster Base Resistances and Immunities:} 
 ItemDisplay[ma13]: Decomposing Settlement%NL%%GRAY%T1-Lv86<<MAP>> {%WHITE%High Res:%BLUE%B:55,%RED%R:60,%YELLOW%Y:66,%ORANGE%M:66,%GOLD%P:66,%DGREEN%P:66%NL%%ORANGE%Monster Base Resistances and Immunities:} 
+ItemDisplay[ma14]: Abyssal Furnace%NL%%GRAY%T2-Lv87 <<MAP>>  {%NL%Immunities:%BLUE%*C:101,%YELLOW%*L:109%NL%%WHITE%High Res:%BLUE%C:60,%RED%F:87,%YELLOW%L:68,%ORANGE%M:50,%GOLD%P:66,%DGREEN%P:68%NL%%ORANGE%Monster Base Resistances and Immunities:} 
 ItemDisplay[MAP ID]: new relics%NL%%WHITE%** T?-Lv?? ** <<MAP>> 
 ItemDisplay[maz]: %GOLD%⚝⚝⚝⚝⚝⚝%NL%%NAME%%NL%%GOLD%Diablo Clone{%GOLD%Good Luck!%NL%You only have one chance%NL%Unable to open the portal upon entry, unable to return after death}<<HIGH>>
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -1534,7 +1536,7 @@ ItemDisplay[(WEAPON OR ARMOR OR aq2 OR cq2 OR rin OR amu) (RARE OR CRAFT) ID]: %
 //║                                        ▬▬▬▬▬ SET ▬▬▬▬▬                                        ║
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[(xul OR xmg OR uh9 OR utc OR ne9) SET !ID]: %NL%%GREEN%Trang %NAME%%NL%<<LOW>>
-ItemDisplay[SET !ID (7qr OR xtb OR uar OR xmg OR uth OR amu)]: %NL%%GREEN%%NAME%%NL%%SPACE%<<MID>>
+ItemDisplay[SET !ID (ult OR 7qr OR xtb OR uar OR xmg OR uth OR amu)]: %NL%%GREEN%%NAME%%NL%%SPACE%<<MID>>
 ItemDisplay[(uh9 OR utc OR ne9 OR ulg OR oba OR ucl OR 7gd OR 7wd OR xul) SET !ID FILTERLVL<6]: %GREEN%%NAME%%NOTIFY(WHITE)%
 ItemDisplay[SET !ID FILTERLVL<4]: %NAME% 
 ItemDisplay[SET ID]: %NAME%%NL%%GREEN%%ITEMNAME% 
@@ -1548,7 +1550,7 @@ ItemDisplay[(ama OR 7pa OR uvb OR 7s8) UNI ETH !ID]: %NL%%GOLD%✠%GRAY%✠ %RED
 //──── High price ────
 ItemDisplay[(rin OR amu OR ulc OR ci3 OR uar) UNI !ID]: %NL%%GOLD%✠✠%GOLD%  %NAME%  %GOLD%✠✠%NL%%SPACE%<<HIGH>>
 //──── Not bad ────
-ItemDisplay[(uow OR ama OR 6lw OR oba OR obc OR 6cs OR 7wa OR 7gi OR 7gd OR 7cr OR 7gw OR obf OR baa OR dra OR dre OR xea OR xhn OR xpl OR upl OR utu OR zhb OR zvb OR xmb OR xtb OR uvg OR uhg OR uap OR ulm OR uhm OR usk OR xh9 OR pa9 OR uit OR nea OR nef OR pac) UNI !ID]: %NL%%GOLD%✠  %GOLD%%NAME%  %GOLD%✠%NL%%SPACE%<<MID>>
+ItemDisplay[(umb OR uow OR ama OR 6lw OR oba OR obc OR 6cs OR 7wa OR 7gi OR 7gd OR 7cr OR 7gw OR obf OR baa OR dra OR dre OR xea OR xhn OR xpl OR upl OR utu OR zhb OR zvb OR xmb OR xtb OR uvg OR uhg OR uap OR ulm OR uhm OR usk OR xh9 OR pa9 OR uit OR nea OR nef OR pac) UNI !ID]: %NL%%GOLD%✠  %GOLD%%NAME%  %GOLD%✠%NL%%SPACE%<<MID>>
 ItemDisplay[UNI !ID FILTERLVL<6]: %NAME%  
 ItemDisplay[UNI ID]: %NAME%%NL%%GOLD%%ITEMNAME% 
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
