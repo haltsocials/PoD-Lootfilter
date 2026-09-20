@@ -14,7 +14,7 @@
 Attribute[Author]: Halt 
 Attribute[Name]: PoD Loot Filter
 Attribute[Version]: #1
-Attribute[Date]: 2025/11/13
+Attribute[Date]: 2026/09/19
 //╔═╦═══════════════════════════════════════════════════════════════════════════════════════════╦═╗
 //║█║███████████████████████████████████████████████████████████████████████████████████████████║█║
 //╠═╬═══════════════════════════════════════════════════════════════════════════════════════════╬═╣
@@ -224,7 +224,7 @@ ItemDisplay[(WEAPON OR ARMOR) RW]: %NAME%%RED%(%SOCKETS%)%NL%%GOLD%%ITEMNAME%%BG
 //╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 ItemDisplay[MAG cm1 (!ID OR MAXDMG>2 OR STAT49>19 OR STAT51>43 OR STAT55>14 OR STAT57>291 OR FRES>8 OR LRES>8 OR CRES>8 OR PRES>8 OR RES>2 OR MFIND>5 OR FHR>0 OR LIFE>16 OR (MANA>10 (LIFE>16 OR FHR>0 OR FRW>0 OR GFIND>9)) OR (STAT31>25 (STR>0 OR DEX>0 OR LIFE>16 OR FHR>0 OR FRW>0 OR MFIND>5 OR GFIND>8)))]: %NAME%%CONTINUE%
 ItemDisplay[MAG cm3 (!ID OR TABSK0=1 OR TABSK1=1 OR TABSK2=1 OR TABSK8=1 OR TABSK9=1 OR TABSK10=1 OR TABSK16=1 OR TABSK17=1 OR TABSK18=1 OR TABSK24=1 OR TABSK25=1 OR TABSK26=1 OR TABSK32=1 OR TABSK33=1 OR TABSK34=1 OR TABSK40=1 OR TABSK41=1 OR TABSK42=1 OR TABSK48=1 OR TABSK49=1 OR TABSK50=1 OR STAT22>8 OR FRES>27 OR LRES>27 OR CRES>27 OR PRES>27 OR RES>12 OR (MANA>39 (LIFE>0 OR FHR>0)) OR ILVL>90)]: %NAME%%CONTINUE%
-//ItemDisplay[MAG cm3 ILVL>90]: %ORANGE%★[i]%BLUE%%NAME%%CONTINUE%{%ORANGE%Cube for 45Life skiller}
+ItemDisplay[MAG cm3 ILVL>90]: %ORANGE%★[i]%BLUE%%NAME%%CONTINUE%{%ORANGE%Cube for 45Life skiller}
 ItemDisplay[EQ7 (MAG OR RARE OR CRAFT) !RW (!ID OR CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0 OR TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR TABSK24>0 OR TABSK25>0 OR TABSK26>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0 OR TABSK40>0 OR TABSK41>0 OR TABSK42>0 OR TABSK48>0 OR TABSK49>0 OR TABSK50>0)]: %NAME%%CONTINUE%
 //ItemDisplay[STAT360>0]: %NAME%%RED%[SLAMMED]%CONTINUE%
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -764,6 +764,7 @@ ItemDisplay[tbk PLRCLASS(PAL)]: %NAME%{ %GOLD%FCR%WHITE%: 9, 18, 30, 48, 75, 125
 ItemDisplay[tbk PLRCLASS(SOR)]: %NAME%{ %GOLD%FCR%WHITE%: 9, 20, 37, 63, 105, 200%NL%%GOLD%FCR%ORANGE%(Lightning)%WHITE%: 7, 15, 23, 35, 52, 78, 117, 194%NL%%GOLD%Faster Block%WHITE%: 7, 15, 27, 48, 86, 200%NL%%GOLD%FHR%WHITE%: 5, 9, 14, 20, 30, 42, 60, 86, 142%NL%%GOLD%Sorceress%WHITE%}
 ItemDisplay[ibk]: %GOLD%%NAME%
 ItemDisplay[tsc TPSCROLLS<10]: %BLUE%TP
+ItemDisplay[tsc DIFFICULTY=0]: %BLUE%TP
 ItemDisplay[isc DIFFICULTY=0]: %GREEN%ID
 //╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
 //║                                        ▬▬▬▬▬ GOLD ▬▬▬▬▬                                       ║
@@ -805,7 +806,7 @@ ItemDisplay[hp4 OR mp4]:
 ItemDisplay[rvs CLVL<80]: %PURPLE%ⓡ %GRAY%35%
 ItemDisplay[rvl]: %PURPLE%Ⓡ %WHITE%70%
 //─────────────────────────────────────────────────────────────────────────────────────────────────
-ItemDisplay[(gpm OR opm OR opl OR ops OR gps OR gpl) CLVL>9]:
+ItemDisplay[(gpm OR opm OR opl OR ops OR gps OR gpl) CLVL>6]:
 //─────────────────────────────────────────────────────────────────────────────────────────────────
 ItemDisplay[key CLVL<30]: %NAME% {%GOLD%[Circle]                [Circle&Crescent]%NL%[Crescent]             [Triangle]%NL%[Square]     [Arrows]%NL%[Star]%WHITE%}
 ItemDisplay[key]: {%GOLD%[Circle]                [Circle&Crescent]%NL%[Crescent]             [Triangle]%NL%[Square]     [Arrows]%NL%[Star]%WHITE%}
@@ -1114,31 +1115,33 @@ ItemDisplay[CHSK82>0 MAG !RW]: %DGREEN% [Life Tap]
 //║█║                                    ▬▬▬▬▬ Necro Leveling ▬▬▬▬▬                                   ║█║
 //╚═╩═══════════════════════════════════════════════════════════════════════════════════════════╩═╝ 
 EnableIf[PLRCLASS(NEC) FILTERLVL=1]
+	ItemDisplay[CLVL<85 CL6 SKILL("Charged Bolt")>1 !RW ]: %DGREEN%[Charged Bolt]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<85 CL6 SKILL("Frost Nova")>1 !RW ]: %DGREEN%[Frost Nova]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<45 STORAGE(SHOP) CHARGES("Teleport")]: %NOTIFY(ITEM)%%DGREEN%Teleport Staff 
 	ItemDisplay[CLVL<35 CL4 SKILL("Bone Spear")=1 !RW ]: %GRAY%[Bone Spear +1 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<55 CL4 SKILL("Bone Spear")=2 !RW ]: %GRAY%[Bone Spear +2 Totem]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<85 CL4 SKILL("Bone Spear")=3 !RW ]: %GOLD%[Bone Spear +3 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<85 CL4 SKILL("Bone Spear")=3 !RW ]: %DGREEN%[Bone Spear +3 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 WP12 SKILL("Bone Spear")=1 !RW ]: %GRAY%[Bone Spear +1]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<35 WP12 SKILL("Bone Spear")=2 !RW ]: %GRAY%[Bone Spear +2]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<60 WP12 SKILL("Bone Spear")=3 !RW ]: %GOLD%[Bone Spear +3]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<60 WP12 SKILL("Bone Spear")=3 !RW ]: %DGREEN%[Bone Spear +3]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<75 WP13 !ETH NMAG SOCK=4 ]: %GRAY%[Holy Thunder]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<30 EQ1 !ETH !CL2 !CL1 NMAG SOCK=2 ]: %GRAY%[Lore]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<20 EQ2 !ETH NMAG SOCK=2 ]: %GRAY%[Stealth]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<24 EQ1 !ETH !CL2 !CL1 NMAG SOCK=2 ]: %NAME%{%GRAY%Lore:%GOLD%[Ort]+[Sol]}%CONTINUE%
+	ItemDisplay[CLVL<17 EQ2 !ETH NMAG SOCK=2 ]: %NAME%{%GRAY%Lore:%GOLD%[Tal]+[Eth]}%CONTINUE%
 	ItemDisplay[CLVL<30 EQ3 !ETH !CL3 NMAG SOCK=3 ]: %GRAY%[Ancients Pledge]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=1 !RW ]: %GRAY%[Teeth +1]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=2 !RW ]: %GRAY%[Teeth +2]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=3 !RW ]: %GOLD%[Teeth +3]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<25 WP12 SKILL("Teeth")=3 !RW ]: %DGREEN%[Teeth +3]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=1 !RW ]: %GRAY%[Teeth +1 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=2 !RW ]: %GRAY%[Teeth +2 Totem]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=3 !RW ]: %GOLD%[Teeth +3 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<25 CL4 SKILL("Teeth")=3 !RW ]: %DGREEN%[Teeth +3 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<60 CL4 !ID MAG]: %BLUE%%NAME%%NOTIFY(WHITE)%
 	ItemDisplay[CLVL<70 CL4 !ID RARE]: %YELLOW%%NAME%%NOTIFY(WHITE)%
-	ItemDisplay[CLVL<25 WP12 SKILL("Hemorrhage")=1 !RW ]: %GRAY%[Hemorrhage +1]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<35 WP12 SKILL("Hemorrhage")=2 !RW ]: %GRAY%[Hemorrhage +2]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<60 WP12 SKILL("Hemorrhage")=3 !RW ]: %GOLD%[Hemorrhage +3]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<12 WP12 SKILL("Hemorrhage")=1 !RW ]: %GRAY%[Hemorrhage +1]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<24 WP12 SKILL("Hemorrhage")=2 !RW ]: %GRAY%[Hemorrhage +2]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<60 WP12 SKILL("Hemorrhage")=3 !RW ]: %DGREEN%[Hemorrhage +3]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<35 CL4 SKILL("Hemorrhage")=1 !RW ]: %GRAY%[Hemorrhage +1 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<55 CL4 SKILL("Hemorrhage")=2 !RW ]: %GRAY%[Hemorrhage +2 Totem]%NOTIFY(ITEM)%
-	ItemDisplay[CLVL<95 CL4 SKILL("Hemorrhage")=3 !RW ]: %GOLD%[Hemorrhage +3 Totem]%NOTIFY(ITEM)%
+	ItemDisplay[CLVL<95 CL4 SKILL("Hemorrhage")=3 !RW ]: %DGREEN%[Hemorrhage +3 Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<95 WP12 NMAG !RW !SOCK=1 !wnd !ywn !9wn SKILL("Bone Armor")=3 ]: %GRAY%[Bone Armor White]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<95 CL4 NMAG !RW !SOCK=1 !wnd !ywn !9wn SKILL("Bone Armor")=3 ]: %GRAY%[Bone Armor Totem]%NOTIFY(ITEM)%
 	ItemDisplay[CLVL<75 WP12 NMAG !RW !SOCK=1 !wnd !ywn !9wn SKILL("Bone Spear")=3 ]: %GRAY%[Bone Spear White]%NOTIFY(ITEM)%
@@ -1499,7 +1502,7 @@ ItemDisplay[CL2 !UNI SK149>2 (TABSK34>2 OR CLSK4>1)]: %NAME%%NOTIFY(ITEM)%  //  
 //──── Dru helm ────
 ItemDisplay[CL1 !UNI ((CLSK5=2 AND (SK221=3 OR SK226=3 OR SK236=3 OR SK237=3 OR SK238=3 OR SK240=3 OR SK243=3 OR SK245=3 OR SK247=3 OR SK249=3 OR SK250=3)) OR (TABSK40=3 AND (SK221>1 OR SK226>1 OR SK236>1 OR SK237>1 OR SK247>1)) OR (TABSK40=2 AND (SK221>2 OR SK226>2 OR SK236>2 OR SK237>2 OR SK247>2)) OR (TABSK41=3 AND (SK238>1 OR SK243>1)) OR (TABSK41=2 AND (SK238>2 OR SK243>2)) OR (TABSK42=3 AND (SK240>1 OR SK245>1 OR SK249>1 OR SK250>1)) OR (TABSK42=2 AND (SK240>2 OR SK245>2 OR SK249>2 OR SK250>2)))]: %NAME%%NOTIFY(ITEM)%  
 //──── NEC ────
-ItemDisplay[CL2 MAG !ID FILTERLVL=1]: %NAME%
+ItemDisplay[CLVL<24 WND (MAG OR RARE) !ID FILTERLVL=1]: %NAME%%NOTIFY(ITEM)%
 ItemDisplay[(CL4 OR WP12) !UNI ((CLSK2=2 AND (SK79=3 OR SK94=3 OR SK95=3 OR SK74=3 OR SK67=3 OR SK84=3 OR SK93=3 OR SK83=3 OR SK92=3 OR SK66=3 OR SK87=3 OR SK91=3 OR SK69=3 OR SKILL("Hemorrhage")=3)) OR (TABSK16=3 AND (SK66>1 OR SK87>1 OR SK91>1 OR SKILL("Hemorrhage")>1)) OR (TABSK16=2 AND (SK66>2 OR SK87>2 OR SK91>2 OR SKILL("Hemorrhage")>2)) OR (TABSK17=3 AND (SK79>1 OR SK74>1 OR SK83>1 OR SK84>1 OR SK92>1 OR SK93>1)) OR (TABSK17=2 AND (SK79>2 OR SK74>2 OR SK83>2 OR SK84>2 OR SK92>2 OR SK93>2)) OR (TABSK18=3 AND (SK69>1 OR SK79>1 OR SK94>1 OR SK95>1)) OR (TABSK18=2 AND (SK69>2 OR SK79>2 OR SK94>2 OR SK95>2)))]: %NAME%%NOTIFY(ITEM)% 
 //──── SOR(nothing yet) ────
 //──── AMA ────
